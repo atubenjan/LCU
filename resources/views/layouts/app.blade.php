@@ -8,17 +8,18 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
     <body>
-<nav class="bg-gray-800 p-4">
-    <div class="container mx-auto flex justify-between items-center">
-        <div class="text-white text-lg font-bold">
-            <a href="{{ route('home') }}">Brand</a>
-        </div>
-        <div class="hidden md:flex space-x-4">
-            <a href="{{ route('home') }}" class="text-gray-300 hover:text-white">Home</a>
-            <a href="{{ route('events') }}" class="text-gray-300 hover:text-white">Events</a>
-            <a href="{{ route('resources') }}" class="text-gray-300 hover:text-white">Resources</a>
-            <a href="{{ route('blog') }}" class="text-gray-300 hover:text-white">Blog</a>
-            <a href="{{ route('signin') }}" class="text-gray-300 hover:text-white">Sign In</a>
+<nav class="bg-gray-800 p-2 h-20">
+        <a href="{{ route('home') }}">
+             <img class="h-16 w-16 rounded-full flex !items-start" src="{{ asset('logo.jpg') }}" alt="">
+         </a>
+        
+    <div class="container mx-auto flex justify-end items-center">
+        <div class="hidden md:flex space-x-12 -translate-y-12">
+            <a href="{{ route('home') }}" class="text-gray-300 hover:text-white font-thin text-lg">Home</a>
+            <a href="{{ route('events') }}" class="text-gray-300 hover:text-white font-thin text-lg">Events</a>
+            <a href="{{ route('resources') }}" class="text-gray-300 hover:text-white font-thin text-lg">Resources</a>
+            <a href="{{ route('blog') }}" class="text-gray-300 hover:text-white font-thin text-lg">Blog</a>
+            <a href="{{ route('signin') }}" class="text-gray-300 hover:text-white font-thin text-lg">Sign In</a>
         </div>
         <div class="md:hidden">
             <button id="nav-toggle" class="text-gray-300 focus:outline-none">
