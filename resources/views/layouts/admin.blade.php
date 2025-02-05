@@ -12,6 +12,9 @@
         <!-- Sidebar -->
         <div class="bg-gray-800 text-white w-64 min-h-screen p-4">
             <h1 class="text-2xl font-bold">ADMIN</h1>
+            <a href="{{ route('home') }}">
+             <img class="h-16 w-16 rounded-full flex !items-start" src="{{ asset('logo.jpg') }}" alt="">
+         </a>
             <nav class="mt-6">
                 <a href="{{ route('admin.dashboard') }}" class="block py-2.5 px-4 rounded hover:bg-gray-700">Dashboard</a>
                 <a href="{{ route('admin.users') }}" class="block py-2.5 px-4 rounded hover:bg-gray-700">Users</a>
