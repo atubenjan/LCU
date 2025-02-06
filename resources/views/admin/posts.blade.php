@@ -1,23 +1,23 @@
 @extends('layouts.admin')
 
 @section('content')
-<h1 class="text-2xl font-semibold">Blog Posts</h1>
+<h1 class="text-2xl font-semibold text-white">Blog Posts</h1>
 <div class="mt-4">
     <button class="bg-blue-500 text-white px-4 py-2 rounded">Create Post</button>
     <table class="min-w-full bg-white mt-4">
         <thead>
             <tr>
-                <th class="py-2">ID</th>
+                <th class="py-2">Author</th>
                 <th class="py-2">Title</th>
                 <th class="py-2">Date</th>
-                <th class="py-2">Actions</th>
+                <th class="py-2">Content</th>
             </tr>
         </thead>
         <tbody>
             <!-- Loop through posts -->
             @foreach($posts as $post)
             <tr>
-                <td class="py-2">{{ $post->id }}</td>
+                <td class="py-2">{{ $post->Author }}</td>
                 <td class="py-2">{{ $post->title }}</td>
                 <td class="py-2">{{ $post->created_at }}</td>
                 <td class="py-2">

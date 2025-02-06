@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-<h1 class="text-2xl font-semibold">Users</h1>
+<h1 class="text-2xl font-semibold text-white">Users</h1>
 <div class="mt-4">
     <table class="min-w-full bg-white">
         <thead>
@@ -9,7 +9,7 @@
                 <th class="py-2">ID</th>
                 <th class="py-2">Name</th>
                 <th class="py-2">Email</th>
-                <th class="py-2">Actions</th>
+                <th class="py-2">Password</th>
             </tr>
         </thead>
         <tbody>
